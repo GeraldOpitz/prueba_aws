@@ -20,7 +20,7 @@ jobs:
             aws-region: us-east-1
 
         - name: Push to S3
-          uses: aws s3 sync . s3://curso-devops-prueba-aws-gopitz
+          run: aws s3 sync . s3://curso-devops-prueba-aws-gopitz
 
         - name: Invalidate CloudFront cache 
           run: aws cloudfront create-invalidation --distribution-id EXAMPLE123 --paths "/*"
