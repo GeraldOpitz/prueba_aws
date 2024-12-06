@@ -23,4 +23,4 @@ jobs:
           run: aws s3 sync . s3://curso-devops-prueba-aws-gopitz
 
         - name: Invalidate CloudFront cache 
-          run: aws cloudfront create-invalidation --distribution-id EXAMPLE123 --paths "/*"
+          run: aws cloudfront create-invalidation --distribution-id E2BD3CGWLNKGXF --paths "/*"
